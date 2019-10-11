@@ -1,0 +1,110 @@
+ * {
+  padding:0;
+  margin:0;
+}
+.App {
+  text-align: center;
+}
+nav ul,nav ul li {
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+nav ul {
+  position:fixed;
+  top:2vmin;
+  left:50%;
+  transform: translateX(-50%);
+  width:50%;
+  background-color:rgba(255,255,255,.5);
+  height:4vmin;
+  display: flex;
+  z-index:2;
+  box-shadow: 0.7vmin 0.7vmin 0vmin rgba(104,139,211,.7);
+}
+nav ul li {
+  float: left;
+  height:4vmin;
+  line-height:4vmin;
+  flex: 1;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav ul li.on,nav ul li:hover {
+  color:rgba(104,139,211,.9);
+  
+}
+nav ul:hover {
+  box-shadow: 0vmin 0vmin 0vmin rgba(189, 193, 202, 0.7);
+  transition: all 1s
+}
+.home{
+  height: 100vmin;
+  background-size: 100% 100%;
+  background-image: url('https://truth.bahamut.com.tw/s01/201508/e261196f715c38c4a75b6f7b9ae46a91.JPG');
+  background-position: center center;
+  background-repeat: no-repeat;
+  position:relative
+}
+.info {
+  position: absolute;
+  top:45%;
+  left:50%;
+  transform: translate(-50%,-45%)
+}
+.headerimg img {
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  animation: headerimg 1s forwards;
+  border:8px solid rgba(225, 225, 225, 0.4);
+}
+@keyframes headerimg{
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.info h2{
+  text-transform: capitalize;
+  animation: headerimg 2s forwards;
+}
+.info p {
+  font-weight: bold;
+  animation: headerimg 2s forwards;
+} 
+
+/*.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
